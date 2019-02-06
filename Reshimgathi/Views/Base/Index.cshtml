@@ -1,0 +1,496 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>रेशीमगाठी मराठा वधु-वर सुचक केंद्र</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="My Wedding Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    @Styles.Render("~/Base/css")
+    @Scripts.Render("~/Base/js")
+<style type="text/css">
+/* The Modal (background) */
+.modal_U {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content_U {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0px 19px 19px 28px;
+  border: 1px solid #888;
+  width: 36%;
+}
+
+/* The Close Button */
+.close_U {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  opacity: .5;
+}
+
+.close_U:hover,
+.close_U:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+.event_U
+{
+  width: 100%;
+  height: 100%;
+}
+
+@@media(max-width:1300px){
+    /* Modal Content */
+	.modal-content_U {
+	  width: 48%;
+	}
+}
+
+@@media(max-width:1100px){
+    /* Modal Content */
+	.modal-content_U {
+	  width: 60%;
+	}
+}
+
+@@media(max-width:930px){
+    /* Modal Content */
+	.modal-content_U {
+	  width: 70%;
+	}
+}
+@@media(max-width:800px){
+    /* Modal Content */
+	.modal-content_U {
+	  width: 80%;
+	}
+}
+
+@@media(max-width:600px){
+    /* Modal Content */
+	.modal-content_U {
+	  width: 90%;
+	  margin: -50px 0px 1px 17px;
+	}
+}
+    </style>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</head>
+<body>
+    <script>
+(function(){
+	if(typeof _bsa !== 'undefined' && _bsa) {
+  		// format, zoneKey, segment:value, options
+  		_bsa.init('flexbar', 'CKYI627U', 'placement:w3layoutscom');
+  	}
+})();
+    </script>
+    <script>
+(function(){
+if(typeof _bsa !== 'undefined' && _bsa) {
+	// format, zoneKey, segment:value, options
+	_bsa.init('fancybar', 'CKYDL2JN', 'placement:demo');
+}
+})();
+    </script>
+    <script>
+(function(){
+	if(typeof _bsa !== 'undefined' && _bsa) {
+  		// format, zoneKey, segment:value, options
+  		_bsa.init('stickybox', 'CKYI653J', 'placement:w3layoutscom');
+  	}
+})();
+    </script>
+    <script>
+	(function(v,d,o,ai){ai=d.createElement("script");ai.defer=true;ai.async=true;ai.src=v.location.protocol+o;d.head.appendChild(ai);})(window, document, "../../../../vdo.ai/core/w3layouts/vdo.ai.js");
+    </script><!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125810435-1"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125810435-1');
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-30027142-1', 'w3layouts.com');
+  ga('send', 'pageview');
+    </script>
+    <script>
+	function loadPopup()
+	{
+		// Get the modal
+		var modal = document.getElementById('myModal_U');
+
+		// Get the button that opens the modal
+		//var btn = document.getElementById("myBtn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close_U")[0];
+
+		// When the user clicks the button, open the modal
+		/*btn.onclick = function() {
+		  modal.style.display = "block";
+		}*/
+
+		//function to call popup
+		OpenPopup = function(){
+			modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		  if (event.target == modal) {
+		    modal.style.display = "none";
+		  }
+		}
+	}
+
+	// A $( document ).ready() block.
+$( document ).ready(function() {
+    console.log( "ready!" );
+    loadPopup();
+});
+
+    </script>
+    <body onload="OpenPopup();">
+        <!--header-->
+        <div class="header">
+            <div class="container">
+                <div class="header-top">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="navbar-brand">
+                                    <h1><a href="index.html">Reshimgathi</a></h1>
+                                </div>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="/Base/Index">Home <span class="sr-only">(current)</span></a></li>
+                                    <li><a href="/Base/Events">Upcoming Events</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="/Base/Photos">Photos</a></li>
+                                            <li><a href="/Base/Videos">Videos</a></li>
+                                            <li><a href="/Base/Testimonial">Testimonials</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/Base/Mycity">Ambajogai Tour</a></li>
+                                    <li><a href="/Base/About">About</a></li>
+                                    <li><a href="/Base/Contact">Contact</a></li>
+                                    <li><a href="/Base/Login">Login</a></li>
+                                    <!--<li><button id="myBtn">Open Modal</button></li>-->
+                                </ul>
+
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                    </nav>
+                </div>
+
+
+                <!-- The Modal start -->
+                <div id="myModal_U" class="modal_U">
+
+                    <!-- Modal content -->
+                    <div class="modal-content_U">
+                        <span class="close_U">&times;</span>
+                        <img class="event_U" src="https://lh3.googleusercontent.com/XavxZedL9p2eCPQQEOF3_tdgGnxl5Sa97Xl2dESBNZAnjNqmdzktW102iw0BD-cG-U29QHlEVjyYdEdNylDkzukyVjTBKCGrn0Z44OSp3ccFO7nO76Rk9LIS1fIGlvaXsrhxcFZtSw=w1920-h1080" alt="Reshimgathi">
+                    </div>
+                </div>
+                <!-- The Modal end -->
+
+                <section class="slider" style="visibility: hidden;">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <div class="slider-info">
+                                    <h3>Welcome</h3>
+                                    <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                    <div class="button">
+                                        <a href="services.html" class="button1 hvr-rectangle-in">get started</a>
+                                        <a href="#" class="button2 hvr-rectangle-in">read more</a>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slider-info">
+                                    <h3>Welcome</h3>
+                                    <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                    <div class="button">
+                                        <a href="services.html" class="button1 hvr-rectangle-in">get started</a>
+                                        <a href="#" class="button2 hvr-rectangle-in">read more</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slider-info">
+                                    <h3>Welcome</h3>
+                                    <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                    <div class="button">
+                                        <a href="services.html" class="button1 hvr-rectangle-in">get started</a>
+                                        <a href="#" class="button2 hvr-rectangle-in">read more</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <script defer src="/js/jquery.flexslider.js"></script>
+                <script type="text/javascript">
+									$(function(){
+									  SyntaxHighlighter.all();
+									});
+									$(window).load(function(){
+									  $('.flexslider').flexslider({
+										animation: "slide",
+										start: function(slider){
+										  $('body').removeClass('loading');
+										}
+									  });
+									});
+                </script>
+                <!-- FlexSlider -->
+            </div>
+            <div class="banner-bottom">
+                <div class="banner-grids">
+                    <div class="col-md-3 banner-grid">
+                        <h5>1200</h5>
+                        <p>Brides</p>
+                    </div>
+                    <div class="col-md-3 banner-grid">
+                        <h5>980</h5>
+                        <p>Grooms</p>
+                    </div>
+                    <div class="col-md-3 banner-grid">
+                        <h5>32</h5>
+                        <p>Cities</p>
+                    </div>
+                    <div class="col-md-3 banner-grid">
+                        <h5>07</h5>
+                        <p>Districts</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!--header-->
+        <!---728x90--->
+
+        <div class="content">
+            <!--about-->
+            <div class="about">
+                <div class="container">
+                    <div class="about-head">
+                        <h2>about</h2>
+                        <p>Reshimgathi is a main platform to meet similar people and find the one with whom you can spend rest of your life together. </p>
+                    </div>
+                    <div class="about-grids">
+                        <div class="col-md-3 about-grid test1">
+                            <img src="/images/p16.jpg" class="img-responsive" alt="/">
+                            <div class="textbox">
+                                <h4>my wedding</h4>
+                                <p>Arenean nonummy hendrerit mau phaselntes nascetur ridic ulusm dui fusce feu.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 about-grid test1">
+                            <img src="/images/p15.jpg" class="img-responsive" alt="/">
+                            <div class="textbox">
+                                <h4>my wedding</h4>
+                                <p>Arenean nonummy hendrerit mau phaselntes nascetur ridic ulusm dui fusce feu.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 about-grid test1">
+                            <img src="/images/p17.jpg" class="img-responsive" alt="/">
+                            <div class="textbox">
+                                <h4>my wedding</h4>
+                                <p>Arenean nonummy hendrerit mau phaselntes nascetur ridic ulusm dui fusce feu.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 about-grid test1">
+                            <img src="/images/p13.jpg" class="img-responsive" alt="/">
+                            <div class="textbox">
+                                <h4>my wedding</h4>
+                                <p>Arenean nonummy hendrerit mau phaselntes nascetur ridic ulusm dui fusce feu.</p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <!--about-->
+            <!---728x90--->
+            <!--hot-offer-->
+            <div class="hot-offer">
+                <div class="container">
+                    <h3>Lovely Gift</h3>
+                    <h4>for your best day!</h4>
+                    <img src="/images/p5.jpg" class="img-responsive" alt="/">
+                    <div class="offer"></div>
+                </div>
+            </div>
+            <!--hot-offer-->
+            <div class="features">
+                <div class="container">
+                    <h3>features</h3>
+                    <div class="features-grids">
+                        <div class="col-md-3 feature-grid">
+                            <div class="feature">
+                                <div class="feature1">
+                                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                                    <h4>Trust</h4>
+                                </div>
+                                <div class="feature2">
+                                    <p>Be honest at all times. Trust is the building block of a relationship If you don't trust, you hinder your ability to truly love the other !</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 feature-grid">
+                            <div class="feature">
+                                <div class="feature1">
+                                    <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                                    <h4>Bond of Love</h4>
+                                </div>
+                                <div class="feature2">
+                                    <p>If you promise to love, trust, respect, support and stand by someone no matter what, do not just speak those words when times are good.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 feature-grid">
+                            <div class="feature">
+                                <div class="feature1">
+                                    <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+                                    <h4>Happiness</h4>
+                                </div>
+                                <div class="feature2">
+                                    <p>One day, in your search for happiness, you discover a partner by your side, and you realize that your happiness has come to help you search.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 feature-grid">
+                            <div class="feature">
+                                <div class="feature1">
+                                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                                    <h4>Wedding Bells</h4>
+                                </div>
+                                <div class="feature2">
+                                    <p>There is never a time or place for true love. It happens accidentally, in a heartbeat, in a single flashing, throbbing moment. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <!---728x90--->
+            <!--news-->
+            <div class="wedding-news">
+                <div class="container">
+                    <h3>wedding Bells</h3>
+                    <div class="wedding-grid">
+                        <div class="col-md-4 weeding-new">
+                            <div class="wedding-inner">
+                                <h4><a href="#">Anuradha Weds Amit</a></h4>
+                                <h5>Dec/03/2017</h5>
+                                <p style="display: none;">We could not have imagined a more perfect day, and we will be forever grateful to you for helping make our wedding so special.</p>
+                            </div>
+                            <a href="#" class="mask">
+                                <img src="/images/w1.jpg" class="img-responsive zoom-img" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-4 weeding-new">
+                            <div class="wedding-inner">
+                                <h4><a href="#">Sayali Weds Kiran</a></h4>
+                                <h5>Jun/06/2014</h5>
+                                <p style="display: none;">We just wanted to say thank you again for making our wedding so wonderful and meaningful. You were so loving and kind to me when I felt faint. </p>
+                            </div>
+                            <a href="#" class="mask">
+                                <img src="/images/w2.jpg" class="img-responsive zoom-img" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-4 weeding-new">
+                            <div class="wedding-inner">
+                                <h4><a href="#">Trupti Weds Kiran</a></h4>
+                                <h5>Dec/22/2018</h5>
+                                <p style="display: none;">We would like you to know about all the compliments we received from our guests telling us how wonderful it was.</p>
+                            </div>
+                            <a href="#" class="mask">
+                                <img src="/images/w3.jpg" class="img-responsive zoom-img" alt="">
+                            </a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--indicate-->
+            <div class="indicate">
+                <div class="container">
+                    <div class="indicate-grids">
+                        <div class="col-md-4 indicate-grid">
+                            <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Govardhan Niwas, Prashant Nagar, Ambajogai, Maharashtra, India</p>
+                        </div>
+                        <div class="col-md-4 indicate-grid">
+                            <p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>Mobile :  +91 9545784111</p>
+                        </div>
+                        <div class="col-md-4 indicate-grid">
+                            <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Email : <a href="mailto:reshimgathimatrimony@gmail.com"> reshimgathimatrimony@gmail.com</a></p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <!--indicate-->
+        </div>
+        <!--footer-->
+        <div class="footer-section">
+            <div class="container">
+                <div class="footer-top">
+                    <p> &copy; 2019 Reshimgathi Matrimony . All Rights Reserved | Design by <a href="http://reshimgathimatrimony.in/">Reshimgathi Matrimony</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+

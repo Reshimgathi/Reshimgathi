@@ -111,13 +111,12 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
-    <Reference Include="WebGrease">
-      <Private>True</Private>
-      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
-    </Reference>
     <Reference Include="Antlr3.Runtime">
       <Private>True</Private>
       <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -176,6 +175,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -187,9 +187,109 @@
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\flexslider.css" />
+    <Content Include="css\owl.carousel.html" />
+    <Content Include="css\style - Copy.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\swipebox.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="images\abs-1.png" />
+    <Content Include="images\banner2 - Copy.jpg" />
+    <Content Include="images\banner2.jpg" />
+    <Content Include="images\banner200.jpg" />
+    <Content Include="images\copy\s11.jpg" />
+    <Content Include="images\copy\s12.jpg" />
+    <Content Include="images\copy\s13.jpg" />
+    <Content Include="images\events\cover-letter.jpg" />
+    <Content Include="images\events\Letter01.jpg" />
+    <Content Include="images\events\Letter02.jpg" />
+    <Content Include="images\g1.jpg" />
+    <Content Include="images\g2.jpg" />
+    <Content Include="images\g3.jpg" />
+    <Content Include="images\g4.jpg" />
+    <Content Include="images\g5.jpg" />
+    <Content Include="images\g6.jpg" />
+    <Content Include="images\g7.jpg" />
+    <Content Include="images\g8.jpg" />
+    <Content Include="images\g9.jpg" />
+    <Content Include="images\icons.html" />
+    <Content Include="images\list-arrow.html" />
+    <Content Include="images\loader.html" />
+    <Content Include="images\p1.jpg" />
+    <Content Include="images\p10.jpg" />
+    <Content Include="images\p11.jpg" />
+    <Content Include="images\p12.jpg" />
+    <Content Include="images\p13.jpg" />
+    <Content Include="images\p14.jpg" />
+    <Content Include="images\p15.jpg" />
+    <Content Include="images\p16.jpg" />
+    <Content Include="images\p17.jpg" />
+    <Content Include="images\p2.jpg" />
+    <Content Include="images\p3.jpg" />
+    <Content Include="images\p4.jpg" />
+    <Content Include="images\p5.jpg" />
+    <Content Include="images\p6.jpg" />
+    <Content Include="images\p7.jpg" />
+    <Content Include="images\p8.jpg" />
+    <Content Include="images\p9.jpg" />
+    <Content Include="images\pagenate.html" />
+    <Content Include="images\rm\370A1599.CR2" />
+    <Content Include="images\rm\370A1630.JPG" />
+    <Content Include="images\rm\370A1650.JPG" />
+    <Content Include="images\rm\NI3_7788.JPG" />
+    <Content Include="images\rm\NI3_8014.JPG" />
+    <Content Include="images\rm\NI3_8393.JPG" />
+    <Content Include="images\s1.jpg" />
+    <Content Include="images\s11.jpg" />
+    <Content Include="images\s111.jpg" />
+    <Content Include="images\s112.jpg" />
+    <Content Include="images\s113.jpg" />
+    <Content Include="images\s12.jpg" />
+    <Content Include="images\s13.jpg" />
+    <Content Include="images\s2.jpg" />
+    <Content Include="images\s3.jpg" />
+    <Content Include="images\s4.jpg" />
+    <Content Include="images\t-p5.JPG" />
+    <Content Include="images\t1.jpg" />
+    <Content Include="images\t2.jpg" />
+    <Content Include="images\t3.jpg" />
+    <Content Include="images\t4.jpg" />
+    <Content Include="images\team\0.jpg" />
+    <Content Include="images\team\00.jpg" />
+    <Content Include="images\team\1.jpg" />
+    <Content Include="images\team\2.jpg" />
+    <Content Include="images\team\3.jpg" />
+    <Content Include="images\team\4.jpg" />
+    <Content Include="images\team\5.jpg" />
+    <Content Include="images\team\6.jpg" />
+    <Content Include="images\team\team.jpg" />
+    <Content Include="images\testimonials\testimonial-01.jpg" />
+    <Content Include="images\testimonials\testimonial-02.jpg" />
+    <Content Include="images\testimonials\testimonial-03.jpg" />
+    <Content Include="images\testimonials\testimonial-04.jpg" />
+    <Content Include="images\testimonials\testimonial-05.jpg" />
+    <Content Include="images\testimonials\testimonial-06.jpg" />
+    <Content Include="images\testimonials\testimonial-07.jpg" />
+    <Content Include="images\testimonials\testimonial-08.jpg" />
+    <Content Include="images\testimonials\testimonial-09.jpg" />
+    <Content Include="images\testimonials\testimonial-10 - Copy.jpg" />
+    <Content Include="images\testimonials\testimonial-10.jpg" />
+    <Content Include="images\tp1.JPG" />
+    <Content Include="images\tp2.JPG" />
+    <Content Include="images\tp3.JPG" />
+    <Content Include="images\TTbanner2.jpg" />
+    <Content Include="images\w1.jpg" />
+    <Content Include="images\w2.jpg" />
+    <Content Include="images\w3.jpg" />
+    <Content Include="images\zoom.png" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\config.js" />
+    <Content Include="js\jquery-1.11.1.min.js" />
+    <Content Include="js\jquery.flexslider.js" />
+    <Content Include="js\jquery.swipebox.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -214,6 +314,10 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="images\json\Test-VTH4TFfPBEF4JE8y8.json" />
+    <Content Include="images\json\VTH4TFfPBEF4JE8y8.json" />
+    <Content Include="images\json\yHmB1RW557qaXnzF8.json" />
+    <Content Include="images\json\ZuXeiFiGoTAukdrRA.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -234,6 +338,19 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Base\Index.cshtml" />
+    <Content Include="Views\Base\About.cshtml" />
+    <Content Include="Views\Base\Completedevent00.cshtml" />
+    <Content Include="Views\Base\Completedevent01.cshtml" />
+    <Content Include="Views\Base\Completedevent02.cshtml" />
+    <Content Include="Views\Base\Completedevent03.cshtml" />
+    <Content Include="Views\Base\Contact.cshtml" />
+    <Content Include="Views\Base\Events.cshtml" />
+    <Content Include="Views\Base\Login.cshtml" />
+    <Content Include="Views\Base\Mycity.cshtml" />
+    <Content Include="Views\Base\Testimonial.cshtml" />
+    <Content Include="Views\Base\Videos.cshtml" />
+    <Content Include="Views\Base\Photos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
