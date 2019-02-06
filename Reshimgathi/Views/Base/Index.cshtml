@@ -139,49 +139,40 @@ if(typeof _bsa !== 'undefined' && _bsa) {
 ga('create', 'UA-30027142-1', 'w3layouts.com');
   ga('send', 'pageview');
     </script>
-    <script>
-	function loadPopup()
-	{
-		// Get the modal
-		var modal = document.getElementById('myModal_U');
+<script>
+function loadPopup()
+{
+	// Get the modal
+	var modal = document.getElementById('myModal_U');
 
-		// Get the button that opens the modal
-		//var btn = document.getElementById("myBtn");
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close_U")[0];
-
-		// When the user clicks the button, open the modal
-		/*btn.onclick = function() {
-		  modal.style.display = "block";
-		}*/
-
-		//function to call popup
-		OpenPopup = function(){
-			modal.style.display = "block";
-		}
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-		  modal.style.display = "none";
-		}
-
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-		  if (event.target == modal) {
-		    modal.style.display = "none";
-		  }
-		}
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close_U")[0];
+	//function to call popup
+	OpenPopup = function(){
+		modal.style.display = "block";
 	}
 
-	// A $( document ).ready() block.
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+		modal.style.display = "none";
+    }
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+		if (event.target == modal) {
+		modal.style.display = "none";
+		}
+	}
+}
+
+// A $( document ).ready() block.
 $( document ).ready(function() {
-    console.log( "ready!" );
-    loadPopup();
+    //console.log( "ready!" );
+    //loadPopup();
 });
 
     </script>
-    <body onload="OpenPopup();">
+    <body><!--   onload="OpenPopup();"  -->
         <!--header-->
         <div class="header">
             <div class="container">
@@ -228,16 +219,14 @@ $( document ).ready(function() {
                 </div>
 
 
-                <!-- The Modal start -->
-                <div id="myModal_U" class="modal_U">
-
-                    <!-- Modal content -->
+                <!-- The Modal start Upcoming events popup...-->
+                <!--<div id="myModal_U" class="modal_U">
                     <div class="modal-content_U">
                         <span class="close_U">&times;</span>
                         <img class="event_U" src="https://lh3.googleusercontent.com/XavxZedL9p2eCPQQEOF3_tdgGnxl5Sa97Xl2dESBNZAnjNqmdzktW102iw0BD-cG-U29QHlEVjyYdEdNylDkzukyVjTBKCGrn0Z44OSp3ccFO7nO76Rk9LIS1fIGlvaXsrhxcFZtSw=w1920-h1080" alt="Reshimgathi">
                     </div>
                 </div>
-                <!-- The Modal end -->
+               --> <!-- The Modal end -->
 
                 <section class="slider" style="visibility: hidden;">
                     <div class="flexslider">
