@@ -287,9 +287,12 @@
     <Content Include="images\zoom.png" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\config.js" />
+    <Content Include="js\Facebook.js" />
+    <Content Include="js\Gmail.js" />
     <Content Include="js\jquery-1.11.1.min.js" />
     <Content Include="js\jquery.flexslider.js" />
     <Content Include="js\jquery.swipebox.min.js" />
+    <Content Include="js\Twitter.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />

@@ -18,6 +18,16 @@ namespace Reshimgathi
                       "~/js/jquery.swipebox.min.js",
                       "~/js/jquery.flexslider.js"));
 
+            bundles.Add(new StyleBundle("~/Facebook/JS").Include(
+                      "~/js/Facebook.js"));
+
+            bundles.Add(new StyleBundle("~/Twitter/JS").Include(
+                      "~/js/Twitter.js",
+                      "~/js/oauth.js"));
+
+            bundles.Add(new StyleBundle("~/Gmail/JS").Include(
+                "~/js/Gmail.js"));
+
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
@@ -36,6 +46,10 @@ namespace Reshimgathi
                       "~/css/bootstrap.css",
                       "~/css/style.css",
                       "~/css/swipebox.css"));
+
+            bundles.Add(new StyleBundle("~/Twitter/CSS").Include(
+                      "~/css/bootstrap-social.min.css",
+                      "~/css/font-awesome.min.css"));
 
         }
     }
