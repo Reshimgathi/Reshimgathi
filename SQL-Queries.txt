@@ -1,0 +1,114 @@
+--Sql Query document
+
+CREATE TABLE LoginMaster (
+    LoginMasterId UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
+    UserName varchar(255),
+	Password varchar(255),
+	UserType BIT   NULL   DEFAULT 0,
+	IsMobileVerified BIT   NULL   DEFAULT 0,
+	IsEmailVerified BIT   NULL   DEFAULT 0,
+	CreateDate datetime DEFAULT CURRENT_TIMESTAMP,
+	UpdatedDate datetime DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE RegistrationPhaseI (
+    RegistrationPhaseIId UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
+    LoginMasterId varchar(255),
+	MobileNo varchar(255),
+	Email varchar(255),
+	AltMobileNo varchar(255),
+	AltEmail varchar(255),
+	CreateDate datetime DEFAULT CURRENT_TIMESTAMP,
+	UpdatedDate datetime DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE RegistrationPhaseII (
+    RegistrationPhaseIIId UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
+    LoginMasterId varchar(255),
+	FirstName varchar(255), --Personal Details :
+	Middle varchar(255),
+	LastName varchar(255),
+	DOB DATE,
+	MaritialStatus varchar(255),
+	SubCast varchar(255),
+	Height NUMERIC,
+	Weight varchar(255),
+	BloodGroup varchar(255),
+	Complexion varchar(255),
+	PhysicalDisabilities varchar(255),
+	IfPhysicalDisabilitiesThenSpecify varchar(255),
+	Spectacles varchar(255),
+	Lens varchar(255),
+	Diet varchar(255),
+	Personality varchar(255),
+	Rashi varchar(255), --Horoscop Details :
+	Nakshtra varchar(255),
+	Charan varchar(255),
+	Gan varchar(255),
+	Nadi varchar(255),
+	BirthTime varchar(255),
+	BirthPlace varchar(255),
+	Gotra/Devak varchar(255),
+	Mangal varchar(255),
+	Degree varchar(255), --Educational / Professional Details :
+	Education varchar(255),
+	Occupation varchar(255),
+	OccupationCity varchar(255),
+	IncomePerAnnum varchar(255),
+	PANNo varchar(255), --Address :
+	AadharNo varchar(255),
+	PermanantAddress varchar(255),
+	CandidatesCurrentAddress varchar(255),
+	FatherIsAlive varchar(255), --Family Background :
+	FatherFullName varchar(255),
+	MotherIsAlive varchar(255),
+	MotherFullName varchar(255),
+	MothersNativePlace varchar(255)
+	Brothers varchar(255),
+	MarriedBrothers varchar(255),
+	Sisters varchar(255),
+	MarriedSisters varchar(255),
+	ParentsOccupation varchar(255),
+	NativeTaluka varchar(255),
+	NativeDistrict varchar(255),
+	SurnamesOfRelatives varchar(255),
+	FamilyWealth varchar(255),
+	AnyInterCaseMarriageInFamily varchar(255),
+	PreferredCities varchar(255), --Expectation :
+	Mangal varchar(255),
+	ExpectedCaste varchar(255),
+	MaxAgeDifference varchar(255),
+	ExpectedHeight varchar(255),
+	Divorcee varchar(255),
+	ExpectedOccupation varchar(255),
+	ExpectedIncomePerAnnum varchar(255),
+	ExpectedEducation varchar(255),
+	PhotoMasterId varchar(255), --photo details
+	CreateDate datetime DEFAULT CURRENT_TIMESTAMP,
+	UpdatedDate datetime DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE PaidCustomers (
+    PaidCustomerId UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
+    LoginMasterId varchar(255),
+	PaymentMode varchar(255),
+	IsPaid BIT   NULL   DEFAULT 0,
+	AmountPaid varchar(255),
+	CreateDate datetime DEFAULT CURRENT_TIMESTAMP,
+	UpdatedDate datetime DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE SocialLoginMaster (
+    SocialLoginMasterId UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
+    LoginMasterId varchar(255),
+	SocialMediaId varchar(255),
+	SocialMediaType varchar(255), -- {Facebook, Twitter, Instagram, Gmail etc...}
+	IsVerified BIT   NULL   DEFAULT 0,
+	ProfilePicture varchar(255)
+	CreateDate datetime DEFAULT CURRENT_TIMESTAMP,
+	UpdatedDate datetime DEFAULT CURRENT_TIMESTAMP
+);
