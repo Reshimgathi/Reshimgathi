@@ -39,6 +39,11 @@ namespace Reshimgathi.Controllers
             return View();
         }
 
+        public ActionResult Completedevent03()
+        {
+            return View();
+        }
+
         public ActionResult Videos()
         {
             return View();

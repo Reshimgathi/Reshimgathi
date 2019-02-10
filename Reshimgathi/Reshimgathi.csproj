@@ -187,8 +187,10 @@
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\bootstrap-social.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\flexslider.css" />
+    <Content Include="css\font-awesome.min.css" />
     <Content Include="css\owl.carousel.html" />
     <Content Include="css\style - Copy.css" />
     <Content Include="css\style.css" />
@@ -216,6 +218,7 @@
     <Content Include="images\g8.jpg" />
     <Content Include="images\g9.jpg" />
     <Content Include="images\icons.html" />
+    <Content Include="images\IMG-20190205-WA0019.jpg" />
     <Content Include="images\list-arrow.html" />
     <Content Include="images\loader.html" />
     <Content Include="images\p1.jpg" />
@@ -292,6 +295,8 @@
     <Content Include="js\jquery-1.11.1.min.js" />
     <Content Include="js\jquery.flexslider.js" />
     <Content Include="js\jquery.swipebox.min.js" />
+    <Content Include="js\oauth.js" />
+    <Content Include="js\platform.js" />
     <Content Include="js\Twitter.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -321,6 +326,10 @@
     <Content Include="images\json\VTH4TFfPBEF4JE8y8.json" />
     <Content Include="images\json\yHmB1RW557qaXnzF8.json" />
     <Content Include="images\json\ZuXeiFiGoTAukdrRA.json" />
+    <Content Include="fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="fonts\OpenSans-Regular.ttf" />
+    <Content Include="fonts\Sail-Regular.ttf" />
+    <Content Include="images\json\XNYqXTmKgHbPRkyZ8.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

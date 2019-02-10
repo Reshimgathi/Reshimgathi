@@ -90,6 +90,14 @@ CREATE TABLE RegistrationPhaseII (
 	UpdatedDate datetime DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE TABLE PhotoMaster (
+	PhotoMasterId UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
+	LoginMasterId varchar(255),
+	PhotoNumber varchar(255),
+	IsProfilePhoto BIT   NULL   DEFAULT 0,
+	IsActive BIT   NULL   DEFAULT 0
+);
+
 
 CREATE TABLE PaidCustomers (
     PaidCustomerId UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
@@ -97,11 +105,32 @@ CREATE TABLE PaidCustomers (
 	PaymentMode varchar(255),
 	IsPaid BIT   NULL   DEFAULT 0,
 	AmountPaid varchar(255),
+	ExpiryDate datetime,
 	CreateDate datetime DEFAULT CURRENT_TIMESTAMP,
 	UpdatedDate datetime DEFAULT CURRENT_TIMESTAMP
 );
 
+--Next step of ShirtListedProfiles
+CREATE TABLE MyInterestedProfiles (
+	ID UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
+	LoginMasterId varchar(255),
+	InterestedLoginId varchar(255),
+	StillInterested BIT  NULL  DEFAULT 0,
+	CreateDate datetime DEFAULT CURRENT_TIMESTAMP,
+	UpdatedDate datetime DEFAULT CURRENT_TIMESTAMP
+);
 
+--This step is before candidate select their interest.
+CREATE TABLE ShortListedProfiles (
+	ID UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
+	LoginMasterId varchar(255),
+	ShortListedLoginId varchar(255),
+	StillShortListed BIT   NULL   DEFAULT 0,
+	CreateDate datetime DEFAULT CURRENT_TIMESTAMP,
+	UpdatedDate datetime DEFAULT CURRENT_TIMESTAMP
+);
+
+--not un use
 CREATE TABLE SocialLoginMaster (
     SocialLoginMasterId UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
     LoginMasterId varchar(255),
