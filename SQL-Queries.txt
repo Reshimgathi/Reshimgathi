@@ -2,21 +2,24 @@
 
 CREATE TABLE LoginMaster (
     LoginMasterId UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
+    ReshimgathiId varchar(255),
     UserName varchar(255),
 	Password varchar(255),
 	UserType BIT   NULL   DEFAULT 0,
-	IsMobileVerified BIT   NULL   DEFAULT 0,
-	IsEmailVerified BIT   NULL   DEFAULT 0,
+	IsActiveUser BIT   NULL   DEFAULT 0, --User exceeded suspended period. So he got penaulty for this account.
+	IsSuspendedUser BIT   NULL   DEFAULT 0, --temprarly services are stopped, because of some issues. Issue might be payment renewal, Not Auth person.
 	CreateDate datetime DEFAULT CURRENT_TIMESTAMP,
 	UpdatedDate datetime DEFAULT CURRENT_TIMESTAMP
 );
-
+	
 
 CREATE TABLE RegistrationPhaseI (
     RegistrationPhaseIId UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
     LoginMasterId varchar(255),
 	MobileNo varchar(255),
+	IsMobileVerified BIT   NULL   DEFAULT 0,
 	Email varchar(255),
+	IsEmailVerified BIT   NULL   DEFAULT 0,
 	AltMobileNo varchar(255),
 	AltEmail varchar(255),
 	CreateDate datetime DEFAULT CURRENT_TIMESTAMP,
@@ -30,6 +33,7 @@ CREATE TABLE RegistrationPhaseII (
 	FirstName varchar(255), --Personal Details :
 	Middle varchar(255),
 	LastName varchar(255),
+	Gender  BIT   NULL   DEFAULT 0, -- 0 = Male, 1 = Female
 	DOB DATE,
 	MaritialStatus varchar(255),
 	SubCast varchar(255),
@@ -50,7 +54,7 @@ CREATE TABLE RegistrationPhaseII (
 	Nadi varchar(255),
 	BirthTime varchar(255),
 	BirthPlace varchar(255),
-	Gotra/Devak varchar(255),
+	GotraOrDevak varchar(255),
 	Mangal varchar(255),
 	Degree varchar(255), --Educational / Professional Details :
 	Education varchar(255),
@@ -96,6 +100,8 @@ CREATE TABLE PhotoMaster (
 	PhotoNumber varchar(255),
 	IsProfilePhoto BIT   NULL   DEFAULT 0,
 	IsActive BIT   NULL   DEFAULT 0
+	CreateDate datetime DEFAULT CURRENT_TIMESTAMP,
+	UpdatedDate datetime DEFAULT CURRENT_TIMESTAMP
 );
 
 
@@ -105,19 +111,9 @@ CREATE TABLE PaidCustomers (
 	PaymentMode varchar(255),
 	IsPaid BIT   NULL   DEFAULT 0,
 	AmountPaid varchar(255),
+	CreateDate datetime DEFAULT CURRENT_TIMESTAMP,
+	UpdatedDate datetime DEFAULT CURRENT_TIMESTAMP
 	ExpiryDate datetime,
-	CreateDate datetime DEFAULT CURRENT_TIMESTAMP,
-	UpdatedDate datetime DEFAULT CURRENT_TIMESTAMP
-);
-
---Next step of ShirtListedProfiles
-CREATE TABLE MyInterestedProfiles (
-	ID UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
-	LoginMasterId varchar(255),
-	InterestedLoginId varchar(255),
-	StillInterested BIT  NULL  DEFAULT 0,
-	CreateDate datetime DEFAULT CURRENT_TIMESTAMP,
-	UpdatedDate datetime DEFAULT CURRENT_TIMESTAMP
 );
 
 --This step is before candidate select their interest.
@@ -130,6 +126,40 @@ CREATE TABLE ShortListedProfiles (
 	UpdatedDate datetime DEFAULT CURRENT_TIMESTAMP
 );
 
+
+--Next step of ShirtListedProfiles
+CREATE TABLE MyInterestedProfiles (
+	ID UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
+	LoginMasterId varchar(255),
+	InterestedLoginId varchar(255),
+	StillInterested BIT  NULL  DEFAULT 0,
+	CreateDate datetime DEFAULT CURRENT_TIMESTAMP,
+	UpdatedDate datetime DEFAULT CURRENT_TIMESTAMP
+);
+
+
+--Next step of ShortListedProfiles
+CREATE TABLE MyInterestedProfiles (
+	ID UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
+	LoginMasterId varchar(255),
+	InterestedLoginId varchar(255),
+	StillInterested BIT  NULL  DEFAULT 0,
+	CreateDate datetime DEFAULT CURRENT_TIMESTAMP,
+	UpdatedDate datetime DEFAULT CURRENT_TIMESTAMP
+);
+
+
+--Next step of MyInterestedProfiles
+CREATE TABLE GetEnquiryForProfilesThroughOffice (
+	ID UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
+	LoginMasterId varchar(255),
+	EnquiryLoginId varchar(255),
+	RequestServed BIT  NULL  DEFAULT 0,
+	CreateDate datetime DEFAULT CURRENT_TIMESTAMP,
+	UpdatedDate datetime DEFAULT CURRENT_TIMESTAMP
+);
+
+
 --not un use
 CREATE TABLE SocialLoginMaster (
     SocialLoginMasterId UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
@@ -140,4 +170,12 @@ CREATE TABLE SocialLoginMaster (
 	ProfilePicture varchar(255)
 	CreateDate datetime DEFAULT CURRENT_TIMESTAMP,
 	UpdatedDate datetime DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE LoginLogs (
+	ID UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
+	LoginMasterId varchar(255),
+	UserName varchar(255),
+	Password varchar(255),
 );
