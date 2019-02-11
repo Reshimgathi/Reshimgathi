@@ -155,7 +155,7 @@ a.button2 {
     margin-top: 2em;
 }
 .banner-bottom {
-    position: relative;
+    /*position: relative;*/
 }
 .banner-grids {
     position: absolute;

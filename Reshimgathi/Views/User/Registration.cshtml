@@ -1,0 +1,223 @@
+﻿@{
+    ViewBag.Title = "Registration";
+}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>रेशीमगाठी मराठा वधु-वर सुचक केंद्र</title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="My Wedding Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <!-- Include SmartWizard CSS -->
+    <link href="../dist/css/smart_wizard.css" rel="stylesheet" type="text/css" />
+
+    <!-- Optional SmartWizard theme -->
+    <link href="../css/smart_wizard_theme_circles.css" rel="stylesheet" type="text/css" />
+    <link href="../css/smart_wizard_theme_arrows.css" rel="stylesheet" type="text/css" />
+    <link href="../css/smart_wizard_theme_dots.css" rel="stylesheet" type="text/css" />
+
+    @Styles.Render("~/Base/css")
+    @Scripts.Render("~/Base/js")
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Include SmartWizard JavaScript source -->
+    <script type="text/javascript" src="../js/jquery.smartWizard.min.js"></script>
+</head>
+<body>
+    <!--header-->
+    <div class="header head-top">
+        <div class="container">
+            <div class="header-top">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="navbar-brand">
+                                <h1><a href="/Base/Index">Reshimgathi</a></h1>
+                            </div>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="/Base/Index">Home <span class="sr-only">(current)</span></a></li>
+                                <li><a href="/Base/Events">Upcoming Events</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="/Base/Photos">Photos</a></li>
+                                        <li><a href="/Base/Videos">Videos</a></li>
+                                        <li><a href="/Base/Testimonial">Testimonials</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/Base/Mycity">Ambajogai Tour</a></li>
+                                <li><a href="/Base/About">About</a></li>
+                                <li><a href="/Base/Contact">Contact</a></li>
+                                <li class="active"><a href="/Base/Login">Logout</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+
+        </div>
+    </div>
+    <!--header-->
+
+    <div class="container" style="position: relative;top: 100px;">
+        <!-- External toolbar sample -->
+        <div class="row d-flex align-items-center p-3 my-3 text-white-50">
+            <div class="col-12 col-lg-6 col-sm-12">
+                <label>Theme:</label>
+                <select id="theme_selector" class="custom-select col-lg-6 col-sm-12">
+                    <option value="default">default</option>
+                    <option value="arrows">arrows</option>
+                    <option value="circles">circles</option>
+                    <option value="dots">dots</option>
+                </select>
+            </div>
+            <!--<div class="col-12 col-lg-6 col-sm-12">
+                <label>External Buttons:</label>
+                <div class="btn-group col-lg-6 col-sm-12" role="group">
+                    <button class="btn btn-secondary" id="prev-btn" type="button">Go Previous</button>
+                    <button class="btn btn-secondary" id="next-btn" type="button">Go Next</button>
+                    <button class="btn btn-danger" id="reset-btn" type="button">Reset Wizard</button>
+                </div>
+            </div>-->
+        </div>
+
+        <!-- SmartWizard html -->
+        <div id="smartwizard">
+            <ul>
+                <li><a href="#step-1">Step 1<br /><small>This is step description</small></a></li>
+                <li><a href="#step-2">Step 2<br /><small>This is step description</small></a></li>
+                <li><a href="#step-3">Step 3<br /><small>This is step description</small></a></li>
+                <li><a href="#step-4">Step 4<br /><small>This is step description</small></a></li>
+            </ul>
+
+            <div>
+                <div id="step-1" class="">
+                    <h3 class="border-bottom border-gray pb-2">Step 1 Content</h3>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+                <div id="step-2" class="">
+                    <h3 class="border-bottom border-gray pb-2">Step 2 Content</h3>
+                    <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </div>
+                </div>
+                <div id="step-3" class="">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+                <div id="step-4" class="">
+                    <h3 class="border-bottom border-gray pb-2">Step 4 Content</h3>
+                    <div class="card">
+                        <div class="card-header">My Details</div>
+                        <div class="card-block p-0">
+                            <table class="table">
+                                <tbody>
+                                    <tr> <th>Name:</th> <td>Tim Smith</td> </tr>
+                                    <tr> <th>Email:</th> <td>example@example.com</td> </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!--footer-->
+    <div class="footer-section"  style="position: relative;top: 300px;">
+        <div class="container">
+            <div class="footer-top">
+                <p> &copy; 2019 Reshimgathi Matrimony . All Rights Reserved | Design by <a href="http://reshimgathimatrimony.in/">Reshimgathi Matrimony</a></p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function () {
+
+        // Step show event
+        $("#smartwizard").on("showStep", function (e, anchorObject, stepNumber, stepDirection, stepPosition) {
+            //alert("You are on step "+stepNumber+" now");
+            if (stepPosition === 'first') {
+                $("#prev-btn").addClass('disabled');
+            } else if (stepPosition === 'final') {
+                $("#next-btn").addClass('disabled');
+            } else {
+                $("#prev-btn").removeClass('disabled');
+                $("#next-btn").removeClass('disabled');
+            }
+        });
+
+        // Toolbar extra buttons
+        var btnFinish = $('<button></button>').text('Finish')
+            .addClass('btn btn-info')
+            .on('click', function () { alert('Finish Clicked'); });
+        var btnCancel = $('<button></button>').text('Cancel')
+            .addClass('btn btn-danger')
+            .on('click', function () { $('#smartwizard').smartWizard("reset"); });
+
+
+        // Smart Wizard
+        $('#smartwizard').smartWizard({
+            selected: 0,
+            theme: 'default',
+            transitionEffect: 'fade',
+            showStepURLhash: true,
+            toolbarSettings: {
+                toolbarPosition: 'both',
+                toolbarButtonPosition: 'end',
+                toolbarExtraButtons: [btnFinish, btnCancel]
+            }
+        });
+
+
+        // External Button Events
+        $("#reset-btn").on("click", function () {
+            // Reset wizard
+            $('#smartwizard').smartWizard("reset");
+            return true;
+        });
+
+        $("#prev-btn").on("click", function () {
+            // Navigate previous
+            $('#smartwizard').smartWizard("prev");
+            return true;
+        });
+
+        $("#next-btn").on("click", function () {
+            // Navigate next
+            $('#smartwizard').smartWizard("next");
+            return true;
+        });
+
+        $("#theme_selector").on("change", function () {
+            // Change theme
+            $('#smartwizard').smartWizard("theme", $(this).val());
+            return true;
+        });
+
+        // Set selected theme on page refresh
+        $("#theme_selector").change();
+    });
+    </script>
+
+</body>
+</html>
+

@@ -5,8 +5,8 @@ CREATE TABLE LoginMaster (
     ReshimgathiId varchar(255),
     UserName varchar(255),
 	Password varchar(255),
-	UserType BIT   NULL   DEFAULT 0,
-	IsActiveUser BIT   NULL   DEFAULT 0, --User exceeded suspended period. So he got penaulty for this account.
+	UserType varchar(30) NOT NULL CHECK (UserType IN('SuperAdmin', 'Admin','Customer'),
+	IsActiveUser BIT   NULL   DEFAULT 1, --User exceeded suspended period. So he got penaulty for this account. Default is activated for first time.
 	IsSuspendedUser BIT   NULL   DEFAULT 0, --temprarly services are stopped, because of some issues. Issue might be payment renewal, Not Auth person.
 	CreateDate datetime DEFAULT CURRENT_TIMESTAMP,
 	UpdatedDate datetime DEFAULT CURRENT_TIMESTAMP
@@ -33,26 +33,26 @@ CREATE TABLE RegistrationPhaseII (
 	FirstName varchar(255), --Personal Details :
 	Middle varchar(255),
 	LastName varchar(255),
-	Gender  BIT   NULL   DEFAULT 0, -- 0 = Male, 1 = Female
+	Gender varchar(20) NOT NULL CHECK (Gender IN('Male', 'Female'),
 	DOB DATE,
 	MaritialStatus varchar(255),
 	SubCast varchar(255),
-	Height NUMERIC,
+	Height varchar(20),
 	Weight varchar(255),
-	BloodGroup varchar(255),
+	BloodGroup varchar(20) NOT NULL CHECK (BloodGroup IN('A+', 'O+', 'B+', 'AB+', 'A-', 'O-', 'B-', 'AB-'),
 	Complexion varchar(255),
-	PhysicalDisabilities varchar(255),
+	PhysicalDisabilities  BIT   NULL   DEFAULT 0, -- 0 means No. 1=Physically Disabled
 	IfPhysicalDisabilitiesThenSpecify varchar(255),
-	Spectacles varchar(255),
-	Lens varchar(255),
-	Diet varchar(255),
+	Spectacles   BIT   NULL   DEFAULT 0,
+	Lens   BIT   NULL   DEFAULT 0,
+	Diet varchar(50),
 	Personality varchar(255),
 	Rashi varchar(255), --Horoscop Details :
 	Nakshtra varchar(255),
 	Charan varchar(255),
 	Gan varchar(255),
 	Nadi varchar(255),
-	BirthTime varchar(255),
+	BirthTime time,
 	BirthPlace varchar(255),
 	GotraOrDevak varchar(255),
 	Mangal varchar(255),
@@ -65,15 +65,15 @@ CREATE TABLE RegistrationPhaseII (
 	AadharNo varchar(255),
 	PermanantAddress varchar(255),
 	CandidatesCurrentAddress varchar(255),
-	FatherIsAlive varchar(255), --Family Background :
+	FatherIsAlive  BIT   NULL   DEFAULT 0, --Family Background :
 	FatherFullName varchar(255),
-	MotherIsAlive varchar(255),
+	MotherIsAlive  BIT   NULL   DEFAULT 0,
 	MotherFullName varchar(255),
 	MothersNativePlace varchar(255)
-	Brothers varchar(255),
-	MarriedBrothers varchar(255),
-	Sisters varchar(255),
-	MarriedSisters varchar(255),
+	Brothers numeric,
+	MarriedBrothers numeric,
+	Sisters numeric,
+	MarriedSisters numeric,
 	ParentsOccupation varchar(255),
 	NativeTaluka varchar(255),
 	NativeDistrict varchar(255),
@@ -97,7 +97,7 @@ CREATE TABLE RegistrationPhaseII (
 CREATE TABLE PhotoMaster (
 	PhotoMasterId UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
 	LoginMasterId varchar(255),
-	PhotoNumber varchar(255),
+	PhotoNo varchar(255),
 	IsProfilePhoto BIT   NULL   DEFAULT 0,
 	IsActive BIT   NULL   DEFAULT 0
 	CreateDate datetime DEFAULT CURRENT_TIMESTAMP,
@@ -179,3 +179,13 @@ CREATE TABLE LoginLogs (
 	UserName varchar(255),
 	Password varchar(255),
 );
+
+
+
+--HASHBYTES('SHA2_512', @pPassword)
+
+CREATE TABLE tab_events ( ID UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
+                          event_name varchar(255) NOT NULL,
+						  event_day varchar(10) NOT NULL CHECK (event_day IN('Mon','Tue','Wed','Thu','Fri','Sat','Sun')),
+                          event_status varchar(10) CHECK (event_status in ('Active','Inactive') )
+                         );
