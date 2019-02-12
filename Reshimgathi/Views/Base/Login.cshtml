@@ -17,6 +17,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     @Scripts.Render("~/Facebook/JS")
     @Scripts.Render("~/Twitter/JS")
     @Scripts.Render("~/Gmail/JS")
+    <script type="text/javascript" src="https://cdn.rawgit.com/oauth-io/oauth-js/c5af4519/dist/oauth.js"></script>
     <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 </head>
 <body>
@@ -24,46 +25,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     -->
 	<div class="header head-top">
 		<div class="container">
-			<div class="header-top">
-				<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-	  <div class="navbar-brand">
-        <h1><a href="/Base/Index">Reshimgathi</a></h1>
-	  </div>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-              <li><a href="/Base/Index">Home <span class="sr-only">(current)</span></a></li>
-              <li><a href="/Base/Events">Upcoming Events</a></li>
-              <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="/Base/Photos">Photos</a></li>
-                      <li><a href="/Base/Videos">Videos</a></li>
-                      <li><a href="/Base/Testimonial">Testimonials</a></li>
-                  </ul>
-              </li>
-              <li><a href="/Base/Mycity">Ambajogai Tour</a></li>
-              <li><a href="/Base/About">About</a></li>
-              <li><a href="/Base/Contact">Contact</a></li>
-              <li class="active"><a href="/Base/Login">Login</a></li>
-          </ul>
-
-      </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-			</div>
-			
+			@Html.Partial("_MainMenu");
 			</div>
 	</div>
 	<!--header-->
@@ -124,13 +86,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </form>
         </div>
         </div>
-			<!--footer-->
-		<div class="footer-section">
-			<div class="container">
-				<div class="footer-top">
-					<p> &copy; 2019 Reshimgathi Matrimony . All Rights Reserved | Design by <a href="http://reshimgathimatrimony.in/">Reshimgathi Matrimony</a></p>
-				</div>
-			</div>
-		</div>
+    <!-- footer starts -->
+    @Html.Partial("_Footer");
+    <!-- footer Ends -->
 </body>
 </html>

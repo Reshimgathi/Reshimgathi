@@ -10,7 +10,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="My Wedding Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-    <link href="https://s3.amazonaws.com/reshimgathiaws06live/CSS/owl.carousel.html" rel="stylesheet">
     @Styles.Render("~/Base/css")
     @Scripts.Render("~/Base/js")
     <script type="text/javascript">
@@ -56,47 +55,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--header-->
 	<div class="header head-top">
 		<div class="container">
-			<div class="header-top">
-				<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-	  <div class="navbar-brand">
-        <h1><a href="/Base/Index">Reshimgathi</a></h1>
-	  </div>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-              <li><a href="/Base/Index">Home <span class="sr-only">(current)</span></a></li>
-              <li><a href="/Base/Events">Upcoming Events</a></li>
-              <li class="dropdown active">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                      <li class="active"><a href="/Base/Photos">Photos</a></li>
-                      <li><a href="/Base/Videos">Videos</a></li>
-                      <li><a href="/Base/Testimonial">Testimonials</a></li>
-                  </ul>
-              </li>
-              <li><a href="/Base/Mycity">Ambajogai Tour</a></li>
-              <li><a href="/Base/About">About</a></li>
-              <li><a href="/Base/Contact">Contact</a></li>
-              <li><a href="/Base/Login">Login</a></li>
-              <!--<li><button id="myBtn">Open Modal</button></li>-->
-          </ul>
-
-      </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-			</div>
-			
+			@Html.Partial("_MainMenu");
 			</div>
 	</div>
 	<!--header-->
@@ -113,37 +72,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 
 				</div>
-				<!---728x90--->
-
-				<!--indicate-->
-				<div class="indicate">
-					<div class="container">
-						<div class="indicate-grids">
-							<div class="col-md-4 indicate-grid">
-								<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Goverdhan Niwas, Prashant Nagar, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ambajogai, Maharashtra, India</p>
-							</div>
-							<div class="col-md-4 indicate-grid">
-								<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>Mobile :  +91 9545784111</p>
-							</div>
-							<div class="col-md-4 indicate-grid">
-								<p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Email : <a href="mailto:reshimgathimatrimony@gmail.com"> reshimgathimatrimony@gmail.com</a></p>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-					</div>
-				</div>
-			<!--indicate-->
-			
-			<!--footer-->
-			<!---728x90--->
-
-		<div class="footer-section">
-			<div class="container">
-				<div class="footer-top">
-					<p> &copy; 2019 Reshimgathi Matrimony . All Rights Reserved | Design by <a href="http://reshimgathimatrimony.in/">Reshimgathi Matrimony</a></p>
-				</div>
-			</div>
-		</div>
+    <!-- footer starts -->
+    @Html.Partial("_Footer");
+    <!-- footer Ends -->
 <script type="text/javascript">
 $(".swipebox").swipebox();
 </script>		

@@ -193,6 +193,10 @@
     <Content Include="css\flexslider.css" />
     <Content Include="css\font-awesome.min.css" />
     <Content Include="css\owl.carousel.html" />
+    <Content Include="css\smart_wizard.css" />
+    <Content Include="css\smart_wizard_theme_arrows.css" />
+    <Content Include="css\smart_wizard_theme_circles.css" />
+    <Content Include="css\smart_wizard_theme_dots.css" />
     <Content Include="css\style - Copy.css" />
     <Content Include="css\style.css" />
     <Content Include="css\swipebox.css" />
@@ -295,6 +299,8 @@
     <Content Include="js\Gmail.js" />
     <Content Include="js\jquery-1.11.1.min.js" />
     <Content Include="js\jquery.flexslider.js" />
+    <Content Include="js\jquery.smartWizard.js" />
+    <Content Include="js\jquery.smartWizard.min.js" />
     <Content Include="js\jquery.swipebox.min.js" />
     <Content Include="js\oauth.js" />
     <Content Include="js\platform.js" />
@@ -365,6 +371,15 @@
     <Content Include="Views\Base\Videos.cshtml" />
     <Content Include="Views\Base\Photos.cshtml" />
     <Content Include="Views\User\Registration.cshtml" />
+    <Content Include="Views\User\_PersonalDetails.cshtml" />
+    <Content Include="Views\User\_HoroscopDetails.cshtml" />
+    <Content Include="Views\User\_EducationDetails.cshtml" />
+    <Content Include="Views\User\_AddressDetails.cshtml" />
+    <Content Include="Views\User\_FamilyBackground.cshtml" />
+    <Content Include="Views\User\_ExpectationDetails.cshtml" />
+    <Content Include="Views\User\_PhotoDetails.cshtml" />
+    <Content Include="Views\Shared\_MainMenu.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
