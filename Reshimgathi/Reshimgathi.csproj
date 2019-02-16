@@ -175,8 +175,11 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\AccountSettingController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PaymentController.cs" />
+    <Compile Include="Controllers\ProfileSettingController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -381,6 +384,14 @@
     <Content Include="Views\Shared\_MainMenu.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Shared\_PostLoginChildNavBar.cshtml" />
+    <Content Include="Views\AccountSetting\Index.cshtml" />
+    <Content Include="Views\AccountSetting\VerifyMobile.cshtml" />
+    <Content Include="Views\AccountSetting\VerifyEmail.cshtml" />
+    <Content Include="Views\ProfileSetting\Index.cshtml" />
+    <Content Include="Views\ProfileSetting\Shortlisted.cshtml" />
+    <Content Include="Views\ProfileSetting\Interested.cshtml" />
+    <Content Include="Views\Payment\Index.cshtml" />
+    <Content Include="Views\Shared\_Head.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

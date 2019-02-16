@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "VerifyEmail";
+}
+<!DOCTYPE HTML>
+<html>
+<head>
+    @Html.Partial("_Head")
+</head>
+<body>
+    <!--header
+        -->
+    <div class="header head-top">
+        <div class="container">
+            @Html.Partial("_MainMenu")
+        </div>
+    </div>
+    <!--header-->
+    <div class="container">
+        <div class="col-12 col-md-12">
+            <form class="form-signin" style="width: 100%;max-width: 420px;padding: 15px;margin: auto;">
+                <div class="text-center mb-4">
+                    <h1 class="h3 mb-3 font-weight-normal">Verify Email</h1>
+                </div>
+                <div class="form-label-group">
+                    <input type="email" id="VerifyEmail" class="form-control" placeholder="Verify Email" required="" autofocus="">
+                </div>
+                <br />
+                <button onclick="alert('OTP will be sent on your Email.');" class="btn btn-lg btn-primary btn-block" type="submit" style="background-color: #0062cc;">Verify Email</button>
+            </form>
+        </div>
+    </div>
+    <!-- footer starts -->
+    @Html.Partial("_Footer")
+    <!-- footer Ends -->
+</body>
+</html>
+
+
+
