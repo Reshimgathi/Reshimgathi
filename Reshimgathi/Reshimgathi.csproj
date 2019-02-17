@@ -392,6 +392,8 @@
     <Content Include="Views\ProfileSetting\Interested.cshtml" />
     <Content Include="Views\Payment\Index.cshtml" />
     <Content Include="Views\Shared\_Head.cshtml" />
+    <Content Include="Views\AccountSetting\ChangePassword.cshtml" />
+    <Content Include="Views\Payment\Make.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

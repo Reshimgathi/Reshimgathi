@@ -23,5 +23,10 @@ namespace Reshimgathi.Controllers
         {
             return View();
         }
+
+        public ActionResult ChangePassword()
+        {
+            return View();
+        }
     }
 }

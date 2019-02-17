@@ -13,5 +13,10 @@ namespace Reshimgathi.Controllers
         {
             return View();
         }
+
+        public ActionResult Make()
+        {
+            return View();
+        }
     }
 }
