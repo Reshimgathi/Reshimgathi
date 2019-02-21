@@ -1,4 +1,6 @@
 --Sql Query document
+--Reshimgathi Matrimony Database.
+
 
 CREATE TABLE LoginMaster (
     LoginMasterId UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
@@ -183,9 +185,11 @@ CREATE TABLE LoginLogs (
 
 
 --HASHBYTES('SHA2_512', @pPassword)
-
 CREATE TABLE tab_events ( ID UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
                           event_name varchar(255) NOT NULL,
 						  event_day varchar(10) NOT NULL CHECK (event_day IN('Mon','Tue','Wed','Thu','Fri','Sat','Sun')),
                           event_status varchar(10) CHECK (event_status in ('Active','Inactive') )
                          );
+
+
+--Add new tables here for proposed functioanlity.

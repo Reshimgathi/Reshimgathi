@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Make";
+}
+<!DOCTYPE HTML>
+<html>
+<head>
+    @Html.Partial("_Head")
+</head>
+<body>
+    <!--header-->
+    @Html.Partial("_PostLoginChildNavBar")
+    <!--header-->
+    <div class="container">
+        <div class="col-12 col-md-12">
+            <form class="form-signin" style="width: 100%;max-width: 420px;padding: 15px;margin: auto;">
+                <div class="text-center mb-4">
+                    <h1 class="h3 mb-3 font-weight-normal">Make Payment</h1>
+                </div>
+                <div class="form-label-group">
+                    <ol>
+                        <li>Cash Payment</li>
+                        <li>Telegraphic Transfer or Mail Transfer</li>
+                        <li>Money Order or Postal Order</li>
+                        <li>Bill of Exchange</li>
+                        <li>Cheque</li>
+                        <li>Bank Draft</li>
+                    </ol>
+                </div>
+                <br />
+                <button onclick="alert('Payment is in progress.');" class="btn btn-lg btn-primary btn-block" type="submit" style="background-color: #0062cc;">Do Payment</button>
+            </form>
+        </div>
+    </div>
+    <!-- footer starts -->
+    @Html.Partial("_Footer")
+    <!-- footer Ends -->
+</body>
+</html>
+
+
+
+
+
+
+
