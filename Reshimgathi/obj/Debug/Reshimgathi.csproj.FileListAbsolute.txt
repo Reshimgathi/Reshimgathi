@@ -144,3 +144,4 @@ C:\E\VS-Programs\Organizations\Reshimgathi\Reshimgathi\Reshimgathi\bin\Microsoft
 C:\E\VS-Programs\Organizations\Reshimgathi\Reshimgathi\Reshimgathi\obj\Debug\Reshimgathi.dll
 C:\E\VS-Programs\Organizations\Reshimgathi\Reshimgathi\Reshimgathi\obj\Debug\Reshimgathi.pdb
 C:\E\VS-Programs\Organizations\Reshimgathi\Reshimgathi\Reshimgathi\obj\Debug\Reshimgathi.csprojResolveAssemblyReference.cache
+C:\E\VS-Programs\Organizations\Reshimgathi\Reshimgathi\Reshimgathi\bin\Org.Apollo.Utility.dll
