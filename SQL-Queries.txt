@@ -1,5 +1,6 @@
 --Sql Query document
 --Reshimgathi Matrimony Database.
+-- Api/security tables are maintained sepratly.
 
 
 CREATE TABLE LoginMaster (
